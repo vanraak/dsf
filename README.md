@@ -4,6 +4,18 @@ dsf is a foundational Python package accompanying the book Data Science Foundati
 
 ## Installation
 
-```
+```bash
 pip install dsf
+```
+
+## Usage
+
+```import dsf
+df=dsf.load('<dataset>') # Replace with the name of the dataset, such as 'bank','house','churn'.
+```
+
+## Example
+
+```import dsf
+df=dsf.load('bank') # Load the bank dataset.
 ```
