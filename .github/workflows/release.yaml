@@ -6,7 +6,7 @@ on:
       - 'v*'
 
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
     environment: pypi
     permissions:
@@ -25,22 +25,6 @@ jobs:
         run: |
           pip install build
           python -m build
-
-  publish:
-    needs: build
-    runs-on: ubuntu-latest
-    environment: pypi
-    permissions:
-      id-token: write
-      contents: read
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: 3.11
 
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
