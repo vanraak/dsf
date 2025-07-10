@@ -1,6 +1,6 @@
 [project]
 name = "dsf"
-version = "0.0.4"
+version = "0.0.5"
 description = "The dsf package provides a collection of datasets used in the book Data Science Foundations and Machine Learning with Python."
 readme = "README.md"
 requires-python = ">=3.10"
