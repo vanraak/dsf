@@ -1,8 +1,9 @@
 ---
 title: "Package `dsf`"
-format: pdf
-toc: false
-toc-location: left   # default, but we'll override placement manually
+format: 
+  md: default
+  pdf: 
+    toc: false
 ---
 
 **Package ‘dsf’**
@@ -13,9 +14,9 @@ July 10, 2025
 
 **Version** 0.0.1
 
-**Description** Provides a collection of datasets used in the book <https://uncovering-data-science.netlify.app>. It is designed to make data science techniques accessible to individuals with minimal coding experience.
+**Description** The **dsf** package provides a collection of datasets used in the book `Data Science Foundations and Machine Learning with Python`. It is designed to make data science techniques accessible to individuals with minimal coding experience.
 
-**URL** https://uncovering-data-science.netlify.app
+**URL** <https://github.com/vanraak/dsf>
 
 **Depends** Python (>= 3.8) and Pandas (>2.0)
 
@@ -23,20 +24,30 @@ July 10, 2025
 
 **Repository** Pypi
 
-**Author** Reza Mohammadi and Jeroen van Raak
+**Authors** Reza Mohammadi and Jeroen van Raak
 
 **Maintainer** Jeroen van Raak, <j.j.f.vanraak@uva.nl>
 
 **NeedsCompilation** no
 
-liver-package
+**Installation**
 
-*liver: "Eating the Liver of Data Science"*
+```
+pip install dsf
+```
 
-**Description**
+**Usage**
 
-The **dsf** package provides a collection of datasets used in the book Data Science Foundations and Machine Learning Using Python. Designed to make data science techniques accessible to individuals with minimal coding experience. 
+```
+import dsf
+df=dsf.load('<dataset>') # Replace with the name of the dataset, such as 'bank','house','churn'.
+```
 
+**Example**
+
+```
+df=dsf.load('bank') # Load the bank dataset.
+```
 
 
 \newpage
@@ -48,15 +59,13 @@ The **dsf** package provides a collection of datasets used in the book Data Scie
 
 \hrulefill
 \vspace{-1.5em}
-\section{adult}
+\section[adult]{adult \normalfont Adult dataset}
 \vspace{-1.5em} 
 \hrulefill
 
 **Description**
 
-The adult dataset was collected from the US Census Bureau and the primary task is to predict whether a given adult makes more than $50K a year based attributes such as education, hours of work per week, etc. the target feature is *income*, a factor with levels "<=50K" and ">50K", and the remaining
-
-14 variables are predictors.
+The adult dataset was collected from the US Census Bureau and the primary task is to predict whether a given adult makes more than $50K a year based attributes such as education, hours of work per week, etc. the target feature is *income*, a factor with levels "<=50K" and ">50K", and the remaining 14 variables are predictors.
 
 **Usage**
 
@@ -72,7 +81,7 @@ The 15 variables are:
 - workclass: a factor with 6 levels.
 - demogweight: the demographics to describe a person.
 - education: a factor with 16 levels.
-- education.num: number of years of education.
+- education_num: number of years of education.
 - marital_status: a factor with 5 levels.
 - occupation: a factor with 15 levels.
 - relationship: a factor with 6 levels.
@@ -104,7 +113,7 @@ Kohavi, R. (1996). Scaling up the accuracy of naive-bayes classifiers: A decisio
 
 \hrulefill
 \vspace{-1.5em}
-\section{advertising}
+\section[advertising]{advertising \normalfont Advertising dataset}
 \vspace{-1.5em} 
 \hrulefill
 
@@ -122,9 +131,9 @@ The advertising dataset, as a data frame, contains 1143 rows and 11 columns (var
 
 The 11 variables are:
 
-- ad.id: an unique ID for each ad.
-- xyz.campaign.id: an ID associated with each ad campaign of XYZ company.
-- fb.campaign.id: an ID associated with how Facebook tracks each campaign.
+- ad_id: an unique ID for each ad.
+- xyz_campaign_id: an ID associated with each ad campaign of XYZ company.
+- fb_campaign_id: an ID associated with how Facebook tracks each campaign.
 - age: age of the person to whom the ad is shown.
 - gender: gender of the person to whim the add is shown.
 - interest: a code specifying the category to which the person’s interest belongs (interests are as mentioned in the person’s Facebook public profile).
@@ -136,9 +145,9 @@ The 11 variables are:
 
 **Details**
 
-A detailed description of the dataset can be found:
+A detailed description of the dataset can be found at:
 
-https://www.kaggle.com/loveall/clicks-conversion-tracking
+<https://www.kaggle.com/loveall/clicks-conversion-tracking>
 
 
 
@@ -147,13 +156,10 @@ https://www.kaggle.com/loveall/clicks-conversion-tracking
 
 \hrulefill
 \vspace{-1.5em}
-\section{bank}
+\section[bank]{bank \normalfont Bank Marketing dataset}
 \vspace{-1.5em} 
 \hrulefill
 
-
-
-*Bank marketing data set*
 
 **Description**
 
@@ -202,7 +208,7 @@ Target variable:
 
 This dataset can be downloaded from the UCI machine learning repository:
 
-http://archive.ics.uci.edu/ml/datasets/Bank+Marketing
+<http://archive.ics.uci.edu/ml/datasets/Bank+Marketing>
 
 **References**
 
@@ -219,13 +225,10 @@ Simulation and Modelling Conference.
 
 \hrulefill
 \vspace{-1.5em}
-\section{cereal}
+\section[cereal]{cereal \normalfont Cereal dataset}
 \vspace{-1.5em} 
 \hrulefill
 
-
-
-*Cereal data set*
 
 **Description**
 
@@ -268,7 +271,9 @@ The 16 variables are:
 
 **Details**
 
-The original source can be found: https://perso.telecom-paristech.fr/eagan/class/igr204/datasets
+The original source can be found at:
+
+<https://perso.telecom-paristech.fr/eagan/class/igr204/datasets>
 
 
 
@@ -277,15 +282,13 @@ The original source can be found: https://perso.telecom-paristech.fr/eagan/class
 
 \hrulefill
 \vspace{-1.5em}
-\section{churn}
+\section[churn]{churn \normalfont Churn dataset}
 \vspace{-1.5em} 
 \hrulefill
 
-*Churn data set*
-
 **Description**
 
-This dataset comes from IBM Sample Data Sets. Customer *churn* occurs when customers stop doing business with a company, also known as customer attrition. the data set contains 5000 rows (customers) and 20 columns (features). the "Churn" column is our target which indicate whether customer churned (left the company) or not.
+This dataset comes from IBM Sample Data Sets. Customer *churn* occurs when customers stop doing business with a company, also known as customer attrition. the dataset contains 5000 rows (customers) and 20 columns (features). the "Churn" column is our target which indicate whether customer churned (left the company) or not.
 
 **Usage**
 
@@ -298,24 +301,24 @@ the churn dataset, as a data frame, contains 5000 rows (customers) and 20 column
 the 20 variables are:
 
 - state: Categorical, for the 51 states and the District of Columbia.
-- area.code: Categorical.
-- account.length: count, how long account has been active.
-- voice.plan: Categorical, yes or no, voice mail plan.
-- voice.messages: Count, number of voice mail messages.
-- intl.plan: Categorical, yes or no, international plan.
-- intl.mins: Continuous, minutes customer used service to make international calls.
-- intl.calls: Count, total number of international calls.
-- intl.charge: Continuous, total international charge.
-- day.mins: Continuous, minutes customer used service during the day.
-- day.calls: Count, total number of calls during the day.
-- day.charge: Continuous, total charge during the day.
-- eve.mins: Continuous, minutes customer used service during the evening.
-- eve.calls: Count, total number of calls during the evening.
-- eve.charge: Continuous, total charge during the evening.
-- night.mins: Continuous, minutes customer used service during the night.
-- night.calls: Count, total number of calls during the night.
-- night.charge: Continuous, total charge during the night.
-- customer.calls: Count, number of calls to customer service.
+- area_code: Categorical.
+- account_length: count, how long account has been active.
+- voice_plan: Categorical, yes or no, voice mail plan.
+- voice_messages: Count, number of voice mail messages.
+- intl_plan: Categorical, yes or no, international plan.
+- intl_mins: Continuous, minutes customer used service to make international calls.
+- intl_calls: Count, total number of international calls.
+- intl_charge: Continuous, total international charge.
+- day_mins: Continuous, minutes customer used service during the day.
+- day_calls: Count, total number of calls during the day.
+- day_charge: Continuous, total charge during the day.
+- eve_mins: Continuous, minutes customer used service during the evening.
+- eve_calls: Count, total number of calls during the evening.
+- eve_charge: Continuous, total charge during the evening.
+- night_mins: Continuous, minutes customer used service during the night.
+- night_calls: Count, total number of calls during the night.
+- night_charge: Continuous, total charge during the night.
+- customer_calls: Count, number of calls to customer service.
 - churn: Categorical, yes or no. Indicator of whether the customer has left the company (yes or no).
 
 **References**
@@ -329,16 +332,13 @@ Larose, D. T. and Larose, C. D. (2014). Discovering knowledge in data: an introd
 
 \hrulefill
 \vspace{-1.5em}
-\section{churncredit}
+\section[churncredit]{churncredit \normalfont Churn dataset for Credit Card Customers}
 \vspace{-1.5em} 
 \hrulefill
 
-
-*Churn dataset for Credit Card Customers*
-
 **Description**
 
-Customer *churn* occurs when customers stop doing business with a company, also known as customer attrition. the data set contains 10127 rows (customers) and 21 columns (features). The "churn" column is our target which indicate whether customer churned (left the company) or not.
+Customer *churn* occurs when customers stop doing business with a company, also known as customer attrition. the dataset contains 10127 rows (customers) and 21 columns (features). The "churn" column is our target which indicate whether customer churned (left the company) or not.
 
 **Usage**
 
@@ -347,44 +347,44 @@ df=dsf.load('churncredit')
 
 **Format**
 
-The churnCredit dataset, as a data frame, contains 10127 rows (customers) and 21 columns (variables/features). 
+The churncredit dataset, as a data frame, contains 10127 rows (customers) and 21 columns (variables/features). 
 
 The 21 variables are:
 
-- customer.ID: Customer ID.
+- customer_id: Customer ID.
 - gender: Whether the customer is a male or a female.
 - age: Customer’s Age in Years.
 - educaton: Educational Qualification of the account holder (example: high school, college graduate, etc.)
-- marital.status: Married, Single, Divorced, Unknown
+- marital_status: Married, Single, Divorced, Unknown
 - income: Annual Income (in Dollar). Category of the account holder (< $40K, $40K - 60K, $60K - $80K, $80K-$120K, > $120K).
-- dependent.counts: Number of dependent counts.
-- card.category: Type of Card (Blue, Silver, Gold, Platinum).
-- months.on.book: Period of relationship with bank.
-- relationship.count: Total number of products held by the customer.
-- months.inactive: Number of months inactive in the last 12 months.
-- contacts.count.12: Number of Contacts in the last 12 months.
-- credit.limit: Credit Limit on the Credit Card.
-- revolving.balance: Total Revolving Balance on the Credit Card.
-- open.to.buy: Open to Buy Credit Line (Average of last 12 months).
-- transaction.amount.Q4.Q1: Change in Transaction Amount (Q4 over Q1).
-- transaction.amount.12: Total Transaction Amount (Last 12 months).
-- transaction.count: Total Transaction Count (Last 12 months).
-- transaction.change: Change in Transaction Count (Q4 over Q1).
-- utilization.ratio: Average Card Utilization Ratio.
+- dependent_counts: Number of dependent counts.
+- card_category: Type of Card (Blue, Silver, Gold, Platinum).
+- months_on_book: Period of relationship with bank.
+- relationship_count: Total number of products held by the customer.
+- months_inactive: Number of months inactive in the last 12 months.
+- contacts_count_12: Number of Contacts in the last 12 months.
+- credit_limit: Credit Limit on the Credit Card.
+- revolving_balance: Total Revolving Balance on the Credit Card.
+- open_to_buy: Open to Buy Credit Line (Average of last 12 months).
+- transaction_amount_Q4_Q1: Change in Transaction Amount (Q4 over Q1).
+- transaction_amount_12: Total Transaction Amount (Last 12 months).
+- transaction_count: Total Transaction Count (Last 12 months).
+- transaction_change: Change in Transaction Count (Q4 over Q1).
+- utilization_ratio: Average Card Utilization Ratio.
 - churn: Whether the customer churned or not (yes or no).
 
 **Details**
 
 For more information related to the dataset see:
 
-https://www.kaggle.com/sakshigoyal7/credit-card-customers
+<https://www.kaggle.com/sakshigoyal7/credit-card-customers>
 
 
 \newpage
 
 \hrulefill
 \vspace{-1.5em}
-\section{churntel}
+\section[churtel]{churntel \normalfont Telco Customer Churn dataset}
 \vspace{-1.5em} 
 \hrulefill
 
@@ -392,7 +392,7 @@ https://www.kaggle.com/sakshigoyal7/credit-card-customers
 
 **Description**
 
-Customer *churn* occurs when customers stop doing business with a company, also known as customer attrition. the data set contains 7043 rows (customers) and 21 columns (features). The "Churn" column is our target which indicate whether customer churned (left the company) or not.
+Customer *churn* occurs when customers stop doing business with a company, also known as customer attrition. the dataset contains 7043 rows (customers) and 21 columns (features). The "Churn" column is our target which indicate whether customer churned (left the company) or not.
 
 **Usage**
 
@@ -402,26 +402,26 @@ df=dsf.load('churntel')
 
 The churnTel dataset, as a data frame, contains 7043 rows (customers) and 21 columns (variables/features). the 21 variables are:
 
-- customer.ID: Customer ID.
+- customer_id: Customer ID.
 - gender: Whether the customer is a male or a female.
-- senior.citizen: Whether the customer is a senior citizen or not (1, 0).
+- senior_citizen: Whether the customer is a senior citizen or not (1, 0).
 - partner: Whether the customer has a partner or not (yes, no).
 - dependent: Whether the customer has dependents or not (yes, no).
 - tenure: Number of months the customer has stayed with the company.
-- phone.service: Whether the customer has a phone service or not (yes, no).
-- multiple.lines: Whether the customer has multiple lines or not (yes, no, no phone service).
-- internet.service: Customer’s internet service provider (DSL, fiber optic, no).
-- online.security: Whether the customer has online security or not (yes, no, no internet service).
-- online.backup: Whether the customer has online backup or not (yes, no, no internet service).
-- device.protection: Whether the customer has device protection or not (yes, no, no internet service).
-- tech.support: Whether the customer has tech support or not (yes, no, no internet service).
-- streaming.TV: Whether the customer has streaming TV or not (yes, no, no internet service).
-- streaming.movie: Whether the customer has streaming movies or not (yes, no, no internet service).
+- phone_service: Whether the customer has a phone service or not (yes, no).
+- multiple_lines: Whether the customer has multiple lines or not (yes, no, no phone service).
+- internet_service: Customer’s internet service provider (DSL, fiber optic, no).
+- online_security: Whether the customer has online security or not (yes, no, no internet service).
+- online_backup: Whether the customer has online backup or not (yes, no, no internet service).
+- device_protection: Whether the customer has device protection or not (yes, no, no internet service).
+- tech_support: Whether the customer has tech support or not (yes, no, no internet service).
+- streaming_TV: Whether the customer has streaming TV or not (yes, no, no internet service).
+- streaming_movie: Whether the customer has streaming movies or not (yes, no, no internet service).
 - contract: the contract term of the customer (month to month, 1 year, 2 year).
-- paperless.bill: Whether the customer has paperless billing or not (yes, no).
-- payment.method: the customer’s payment method (electronic check, mail check, bank transfer, credit card).
-- monthly.charge: the amount charged to the customer monthly.
-- total.charges: the total amount charged to the customer.
+- paperless_bill: Whether the customer has paperless billing or not (yes, no).
+- payment_method: the customer’s payment method (electronic check, mail check, bank transfer, credit card).
+- monthly_charge: the amount charged to the customer monthly.
+- total_charges: the total amount charged to the customer.
 - churn: Whether the customer churned or not (yes or no).
 
 **Details**
@@ -429,15 +429,17 @@ The churnTel dataset, as a data frame, contains 7043 rows (customers) and 21 col
 For more information related to the dataset see:
 <https://www.kaggle.com/blastchar/telco-customer-churn>
 
+
+
+
+
 \newpage
 
 \hrulefill
 \vspace{-1.5em}
-\section{corona}
+\section[corona]{corona \normalfont COVID-19 Coronavirus dataset}
 \vspace{-1.5em} 
 \hrulefill
-
-*Corona data set*
 
 **Description**
 
@@ -453,9 +455,9 @@ The corona dataset, as a data frame, contains 61900 rows and 12 columns (variabl
 
 **Details**
 
-This dataset can be downloaded from the UCI machine learning repository:
+This dataset can be downloaded from European data repository:
 
-https://data.europa.eu/euodp/en/data/dataset/covid-19-coronavirus-data
+<https://data.europa.eu/data/datasets/covid-19-coronavirus-data-daily-up-to-14-december-2020>
 
 
 
@@ -463,12 +465,11 @@ https://data.europa.eu/euodp/en/data/dataset/covid-19-coronavirus-data
 
 \hrulefill
 \vspace{-1.5em}
-\section{fertilizer}
+\section[fertilizer]{fertilizer \normalfont Fertilizer dataset}
 \vspace{-1.5em} 
 \hrulefill
 
 
-*Fertilizer data set*
 
 **Description**
 
@@ -478,21 +479,20 @@ The fertilizer dataset contains 4 features and 96 records. Results from an exper
 
 df=dsf.load('fertilizer')
 
+
+
+
 \newpage
 
 \hrulefill
 \vspace{-1.5em}
-\section{house}
+\section[house]{house \normalfont House dataset}
 \vspace{-1.5em} 
 \hrulefill
 
-
-
-*house data set*
-
 **Description**
 
-the house dataset contains 6 features and 414 records. the target feature is *unit.price* and the remaining 5 variables are predictors.
+the house dataset contains 6 features and 414 records. the target feature is *unit_price* and the remaining 5 variables are predictors.
 
 **Usage**
 
@@ -502,18 +502,18 @@ df=dsf.load('house')
 
 The house dataset, as a data frame, contains 414 rows and 6 columns (variables/features). The 6 variables are:
 
-- house.age: house age (numeric, in year).
-- distance.to.MRT: distance to the nearest MRT station (numeric).
-- stores.number: number of convenience stores (numeric).
+- house_age: house age (numeric, in year).
+- distance_to_mrt: distance to the nearest MRT station (numeric).
+- stores_number: number of convenience stores (numeric).
 - latitude: latitude (numeric).
 - longitude: longitude (numeric).
-- unit.price: house price of unit area (numeric).
+- unit_price: house price of unit area (numeric).
 
 **Details**
 
-A detailed description of the dataset can be found:
+A detailed description of the dataset can be found at:
 
-https://www.kaggle.com/quantbruce/real-estate-price-prediction
+<https://www.kaggle.com/quantbruce/real-estate-price-prediction>
 
 
 
@@ -521,15 +521,13 @@ https://www.kaggle.com/quantbruce/real-estate-price-prediction
 
 \hrulefill
 \vspace{-1.5em}
-\section{houseprice}
+\section[houseprice]{houseprice \normalfont HousePrice dataset}
 \vspace{-1.5em} 
 \hrulefill
 
-*housePrice dataset*
-
 **Description**
 
-This data set contains 1460 rows and 81 columns (features). the "SalePrice" column is the target.
+This dataset contains 1460 rows and 81 columns (features). the "SalePrice" column is the target.
 
 **Usage**
 
@@ -543,7 +541,7 @@ The housePrice dataset, as a data frame, contains 1460 rows and 81 columns (vari
 
 For more information related to the dataset see:
 
-https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data
+<https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data>
 
 
 
@@ -551,12 +549,9 @@ https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data
 
 \hrulefill
 \vspace{-1.5em}
-\section{insurance}
+\section[insurance]{insurance \normalfont Insurance dataset}
 \vspace{-1.5em} 
 \hrulefill
-
-
-*insurance data set*
 
 **Description**
 
@@ -582,23 +577,64 @@ The 7 variables are:
 
 **Details**
 
-A detailed description of the dataset can be found:
+A detailed description of the dataset can be found at:
 
-https://www.kaggle.com/mirichoi0218/insurance
+<https://www.kaggle.com/mirichoi0218/insurance>
 
 **References**
 
 Brett Lantz (2019). Machine Learning with R: Expert techniques for predictive modeling. *Packt* *Publishing Ltd*.
 
+
+
 \newpage
 
 \hrulefill
 \vspace{-1.5em}
-\section{redwines}
+\section[marketing]{marketing \normalfont Marketing dataset}
 \vspace{-1.5em} 
 \hrulefill
 
-*Red wines data set*
+**Description**
+
+The marketing dataset contains 8 features and 40 records as 40 days that report how much we spent, how many clicks, impressions and transactions we got, whether or not a display campaign was running, as well as our revenue, click-through-rate and conversion rate. the target feature is revenue and the remaining 7 variables are predictors.
+
+
+**Usage**
+
+df=dsf.load('marketing')
+
+**Format**
+
+The marketing dataset, as a data frame, contains 40 rows and 8 columns (variables/features). 
+
+The 8 variables are:
+
+- spend: daily send of money on PPC (apy-per-click).
+- clicks: number of clicks on for that ad.
+- impressions: amount of impressions per day.
+- display: whether or not a display campaign was running.
+- transactions: number of transactions per day.
+- click_rate: click-through-rate.
+- conversion.rate: conversion rate.
+- revenue: daily revenue.
+
+**Details**
+
+A detailed description of the dataset can be found at:
+
+<https://github.com/chrisBow/marketing-regression-part-one>
+
+
+
+
+\newpage
+
+\hrulefill
+\vspace{-1.5em}
+\section[redwines]{redwines \normalfont Red Wines dataset}
+\vspace{-1.5em} 
+\hrulefill
 
 **Description**
 
@@ -617,13 +653,13 @@ The 12 variables are:
 
 Input variables (based on physicochemical tests):
 
-- fixed acidity
-- volatile acidity
-- citric acid
-- residual sugar
+- fixed_acidity
+- volatile_acidity
+- citric_acid
+- residual_sugar
 - chlorides
-- free sulfur dioxide
-- total sulfur dioxide
+- free_sulfur_dioxide
+- total_sulfur_dioxide
 - density
 - pH
 - sulphates
@@ -637,7 +673,7 @@ Output variable (based on sensory data)
 
 This dataset can be downloaded from the UCI machine learning repository:
 
-https://archive.ics.uci.edu/dataset/186/wine+quality
+<https://archive.ics.uci.edu/dataset/186/wine+quality>
 
 **References**
 
@@ -649,11 +685,9 @@ Cortez, P., Cerdeira, A., Almeida, F., Matos, T., and Reis, J. (2009). Modeling 
 
 \hrulefill
 \vspace{-1.5em}
-\section{risk}
+\section[risk]{risk \normalfont Risk dataset}
 \vspace{-1.5em} 
 \hrulefill
-
-*Risk data set*
 
 **Description**
 
@@ -681,12 +715,10 @@ The 6 variables are:
 
 \hrulefill
 \vspace{-1.5em}
-\section{whitewines}
+\section[whitewines]{whitewines \normalfont White Wines dataset}
 \vspace{-1.5em} 
 \hrulefill
 
-
-White wines data set*
 
 **Description**
 
@@ -704,13 +736,13 @@ The 12 variables are:
 
 Input variables (based on physicochemical tests):
 
-- fixed acidity
-- volatile acidity
-- citric acid
-- residual sugar
+- fixed_acidity
+- volatile_acidity
+- citric_acid
+- residual_sugar
 - chlorides
-- free sulfur dioxide
-- total sulfur dioxide
+- free_sulfur_dioxide
+- total_sulfur_dioxide
 - density
 - pH
 - sulphates
@@ -724,7 +756,7 @@ Output variable (based on sensory data)
 
 This dataset can be downloaded from the UCI machine learning repository:
 
-https://archive.ics.uci.edu/dataset/186/wine+quality
+<https://archive.ics.uci.edu/dataset/186/wine+quality>
 
 **References**
 
