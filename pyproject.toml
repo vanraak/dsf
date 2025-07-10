@@ -4,7 +4,7 @@ version = "0.0.4"
 description = "The dsf package provides a collection of datasets used in the book Data Science Foundations and Machine Learning with Python."
 readme = "README.md"
 requires-python = ">=3.10"
-license = { text = "MIT" }
+license = { file = "LICENSE" }
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
@@ -18,6 +18,7 @@ urls = { "Homepage" = "https://github.com/vanraak/dsf" }
 
 [tool.setuptools]
 include-package-data = true
+packages = ["dsf"]
 
 [tool.setuptools.package-data]
 dsf = ["data/*"]
