@@ -18,7 +18,8 @@ urls = { "Homepage" = "https://github.com/vanraak/dsf" }
 
 [tool.setuptools]
 include-package-data = true
-packages = ["dsf"]
 
-[tool.setuptools.package-data]
-dsf = ["data/*"]
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["dsf*"]
+exclude = ["csv", "pickle", "sourcedata"]
