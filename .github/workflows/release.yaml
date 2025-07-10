@@ -23,7 +23,7 @@ jobs:
 
       - name: Build package
         run: |
-          rm -rf dist/
+          rm -rf dist/*
           pip install build
           python -m build
 
