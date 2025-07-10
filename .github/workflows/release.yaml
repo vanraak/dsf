@@ -6,11 +6,11 @@ on:
       - 'v*'
 
 jobs:
-  publish:
+  build:
     runs-on: ubuntu-latest
-    environment: pypi  #
+    environment: pypi
     permissions:
-      id-token: write  #
+      id-token: write
       contents: read
 
     steps:
@@ -26,13 +26,12 @@ jobs:
           pip install build
           python -m build
 
-
-jobs:
   publish:
+    needs: build
     runs-on: ubuntu-latest
-    environment: pypi  #
+    environment: pypi
     permissions:
-      id-token: write  #
+      id-token: write
       contents: read
 
     steps:
