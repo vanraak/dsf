@@ -7,7 +7,7 @@ July 10, 2025
 
 **Title** \`\`Data Science Foudations’’
 
-**Version** 0.0.1
+**Version** 0.0.6
 
 **Description**
 
@@ -54,6 +54,7 @@ The following datasets are included:
 - churncredit
 - churntel
 - corona
+- diamonds
 - fertilizer
 - house
 - houseprice

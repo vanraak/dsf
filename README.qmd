@@ -1,21 +1,15 @@
 ---
 title: "Package `dsf`"
+date: "2025-07-11"
 format: 
   pdf: 
     toc: false
+    include-in-header: tight-title.tex
 ---
 
-**Package ‘dsf’**
+**Version** 0.0.6
 
-July 10, 2025
-
-**Title** ``Data Science Foudations''
-
-**Version** 0.0.1
-
-**Description** 
-
-The **dsf** package provides a collection of datasets used in the book `Data Science Foundations and Machine Learning with Python`. It is designed to make data science techniques accessible to individuals with minimal coding experience.
+**Description** The **dsf** package provides a collection of datasets used in the book `Data Science Foundations and Machine Learning with Python`. It is designed to make data science techniques accessible to individuals with minimal coding experience.
 
 **URL** <https://github.com/vanraak/dsf>
 
@@ -29,25 +23,23 @@ The **dsf** package provides a collection of datasets used in the book `Data Sci
 
 **Maintainer** Jeroen van Raak, <j.j.f.vanraak@uva.nl>
 
-**NeedsCompilation** no
-
 **Installation**
-
-```
+```{python}
+#| eval: false
 pip install dsf
 ```
 
 **Usage**
-
-```
+```{python}
+#| eval: false
 import dsf
 df=dsf.load('<dataset>')
-```
+``` 
 Replace <dataset> with the name of the dataset, such as 'bank','house', or 'churn'.
 
 **Example**
-
-```
+```{python}
+#| eval: false
 df=dsf.load('bank') # Load the bank dataset.
 ```
 
@@ -460,6 +452,56 @@ The corona dataset, as a data frame, contains 61900 rows and 12 columns (variabl
 This dataset can be downloaded from European data repository:
 
 <https://data.europa.eu/data/datasets/covid-19-coronavirus-data-daily-up-to-14-december-2020>
+
+
+
+
+
+\newpage
+
+
+\hrulefill
+\vspace{-1.5em}
+\section[diamonds]{diamonds \normalfont Diamonds dataset}
+\vspace{-1.5em} 
+\hrulefill
+
+**Description**
+
+The diamonds dataset is a comprehensive collection of data about diamonds, widely used in data science to practice visualization, statistical modeling, and machine learning. It includes detailed characteristics of individual diamonds and their corresponding prices. The dataset contains detailed information on over 50,000 diamonds, including both physical characteristics and pricing.
+
+**Usage**
+
+df=dsf.load('diamonds')
+
+
+**Format**
+
+The 10 variables are:
+
+- carat: weight of the diamond (ranging from 0.2 to 5.01),
+- cut: quality of the cut (Fair, Good, Very Good, Premium, Ideal),
+- color: color grade, from D (most colorless) to J (least colorless),
+- clarity`: clarity grade, from I1 (least clear) to IF (flawless),
+- depth: total depth percentage calculated as: 2 * z / (x + y),
+- table: width of the top facet relative to the widest point (43-95%),
+- x: length in mm
+- y: width in mm
+- z: depth in mm
+- price: price in US dollars (ranging from \$326 to \$18,823).
+
+**Details**
+
+For more information related to the dataset see:
+
+<https://search.r-project.org/CRAN/refmans/nodbi/html/diamonds.html>
+
+
+
+
+
+
+
 
 
 
