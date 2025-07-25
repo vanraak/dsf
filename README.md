@@ -21,7 +21,7 @@ The **dsf** package provides a collection of datasets used in the book `Data Sci
 
 **Repository** Pypi
 
-**Authors** Reza Mohammadi and Jeroen van Raak
+**Authors** Jeroen van Raak and Reza Mohammadi
 
 **Maintainer** Jeroen van Raak, <j.j.f.vanraak@uva.nl>
 
