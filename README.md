@@ -3,11 +3,11 @@
 
 **Package ‘dsf’**
 
-July 10, 2025
+August 30, 2025
 
 **Title** \`\`Data Science Foudations’’
 
-**Version** 0.0.6
+**Version** 0.0.7
 
 **Description**
 
@@ -21,7 +21,7 @@ The **dsf** package provides a collection of datasets used in the book `Data Sci
 
 **Repository** Pypi
 
-**Authors** Reza Mohammadi and Jeroen van Raak
+**Authors** Jeroen van Raak and Reza Mohammadi
 
 **Maintainer** Jeroen van Raak, <j.j.f.vanraak@uva.nl>
 
@@ -49,6 +49,7 @@ The following datasets are included:
 - adult
 - advertising
 - bank
+- caravan
 - cereal
 - churn
 - churncredit

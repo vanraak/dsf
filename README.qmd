@@ -1,13 +1,13 @@
 ---
 title: "Package `dsf`"
-date: "2025-07-11"
+date: "2025-08-30"
 format: 
   pdf: 
     toc: false
     include-in-header: tight-title.tex
 ---
 
-**Version** 0.0.6
+**Version** 0.0.7
 
 **Description** The **dsf** package provides a collection of datasets used in the book `Data Science Foundations and Machine Learning with Python`. It is designed to make data science techniques accessible to individuals with minimal coding experience.
 
@@ -19,7 +19,7 @@ format:
 
 **Repository** Pypi
 
-**Authors** Reza Mohammadi and Jeroen van Raak
+**Authors** Jeroen van Raak and Reza Mohammadi
 
 **Maintainer** Jeroen van Raak, <j.j.f.vanraak@uva.nl>
 
@@ -208,9 +208,46 @@ This dataset can be downloaded from the UCI machine learning repository:
 
 Moro, S., Laureano, R. and Cortez, P. (2011) Using Data Mining for Bank Direct Marketing: An
 
-Application of the CRISP-DM Methodology. In P. Novais et al. (Eds.), Proceedings of the European
+Application of the CRISP-DM Methodology. In P. Novais et al. (Eds.), Proceedings of the European Simulation and Modelling Conference.
 
-Simulation and Modelling Conference.
+
+
+\newpage
+
+
+\hrulefill
+\vspace{-1.5em}
+\section[caravan]{caravan \normalfont Caravan Insurance dataset}
+\vspace{-1.5em} 
+\hrulefill
+
+
+**Description**
+
+The dataset contains 5822 customer records from an insurance company, each described by 86 variables. These include 43 sociodemographic features based on zip codes and 43 indicators of product ownership. The final variable, Purchase, indicates whether a customer bought a caravan insurance policy. Collected for the CoIL 2000 Challenge, the data was designed to address the question: Can you predict who would be interested in buying a caravan insurance policy and explain why?
+
+**Usage**
+
+df=dsf.load('bank')
+
+**Format**
+
+The caravan dataset contains 5822 rows (customers) and 86 columns (variables/features).
+
+Further variable details are available at <http://www.liacs.nl/~putten/library/cc2000/data.html>.
+
+**Details**
+
+The data was supplied by Sentient Machine Research:
+<https://www.smr.nl>
+
+**References**
+
+P. van der Putten and M. van Someren (eds) . CoIL Challenge 2000: The Insurance Company Case. Published by Sentient Machine Research, Amsterdam. Also a Leiden Institute of Advanced 
+Computer Science Technical Report 2000-09. June 22, 2000. <http://www.liacs.nl/~putten/library/cc2000>.
+
+James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013). An Introduction to Statistical Learning with applications in R, <https://www.statlearning.com>, Springer-Verlag.
+
 
 
 
@@ -290,9 +327,9 @@ df=dsf.load('churn')
 
 **Format**
 
-the churn dataset, as a data frame, contains 5000 rows (customers) and 20 columns (variables/features).
+The churn dataset, as a data frame, contains 5000 rows (customers) and 20 columns (variables/features).
 
-the 20 variables are:
+The 20 variables are:
 
 - state: Categorical, for the 51 states and the District of Columbia.
 - area_code: Categorical.
@@ -517,7 +554,7 @@ For more information related to the dataset see:
 
 **Description**
 
-The fertilizer dataset contains 4 features and 96 records. Results from an experiment to compare yields of a crop obtained under three different fertilizers. the target feature is *yield*.
+The fertilizer dataset contains 4 features and 96 records. Results from an experiment to compare yields of a crop obtained under three different fertilizers. The target feature is *yield*.
 
 **Usage**
 
@@ -536,7 +573,7 @@ df=dsf.load('fertilizer')
 
 **Description**
 
-the house dataset contains 6 features and 414 records. the target feature is *unit_price* and the remaining 5 variables are predictors.
+The house dataset contains 6 features and 414 records. The target feature is *unit_price* and the remaining 5 variables are predictors.
 
 **Usage**
 
