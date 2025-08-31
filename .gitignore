@@ -1,6 +1,10 @@
 # Ignore build output
 build/
 dist/
+dsf/__pycache__/
+
+#Old backup files
+backup/
 
 # TeX / LaTeX files
 .tex

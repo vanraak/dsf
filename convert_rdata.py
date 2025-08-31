@@ -22,6 +22,10 @@ for file in os.listdir(data_dir):
         file_path = os.path.join(data_dir, file)
         filename = os.path.splitext(file)[0].lower()
         df=pd.read_csv(file_path)
+        #Convert "yes/Yes/no/No" to Booleans for the churn dataset
+        if filename=="churn":
+            for col in ['churn','internationalplan','voicemailplan']:
+                df[col] = df[col].str.lower() == 'yes'
         df.to_csv(os.path.join('csv', f'{filename}.csv'), index=False)
         df.to_pickle(os.path.join('dsf', 'data', f'{filename}.pkl'))
         df.to_parquet(os.path.join('parquet', f'{filename}.parquet'))
