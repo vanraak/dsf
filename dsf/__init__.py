@@ -17,7 +17,7 @@ datasets = {
     "houseprice": "House price dataset.",
     "insurance": "Insurance dataset.",
     "marketing": "Marketing campaigns dataset.",
-    "mpg": ":Auto MPG dataset.",
+    "mpg": "Auto MPG dataset.",
     "redwines": "Red wine quality dataset.",
     "risk": "Risk analysis dataset.",
     "whitewines": "White wine quality dataset."

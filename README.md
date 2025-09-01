@@ -3,11 +3,11 @@
 
 **Package ‘dsf’**
 
-August 30, 2025
+September 1, 2025
 
 **Title** \`\`Data Science Foudations’’
 
-**Version** 0.0.8
+**Version** 0.0.9
 
 **Description**
 
@@ -36,7 +36,7 @@ The **dsf** package provides a collection of datasets used in the book `Data Sci
     import dsf
     df=dsf.load('<dataset>')
 
-Replace <dataset> with the name of the dataset, such as ‘bank’,‘house’, or ‘churn’.
+Replace <dataset> with the name of the dataset, such as ‘bank’, ‘house’, or ‘churn’.
 
 **Example**
 

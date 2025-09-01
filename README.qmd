@@ -1,13 +1,13 @@
 ---
 title: "Package `dsf`"
-date: "2025-08-30"
+date: "2025-09-01"
 format: 
   pdf: 
     toc: false
     include-in-header: tight-title.tex
 ---
 
-**Version** 0.0.8
+**Version** 0.0.9
 
 **Description** The **dsf** package provides a collection of datasets used in the book `Data Science Foundations and Machine Learning with Python`. It is designed to make data science techniques accessible to individuals with minimal coding experience.
 
