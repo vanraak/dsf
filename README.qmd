@@ -7,7 +7,7 @@ format:
     include-in-header: tight-title.tex
 ---
 
-**Version** 0.0.9
+**Version** 0.0.10
 
 **Description** The **dsf** package provides a collection of datasets used in the book `Data Science Foundations and Machine Learning with Python`. It is designed to make data science techniques accessible to individuals with minimal coding experience.
 

@@ -7,7 +7,7 @@ September 1, 2025
 
 **Title** \`\`Data Science Foudations’’
 
-**Version** 0.0.9
+**Version** 0.0.10
 
 **Description**
 
@@ -61,6 +61,7 @@ The following datasets are included:
 - houseprice
 - insurance
 - marketing
+- mpg
 - redwines
 - risk
 - whitewines
