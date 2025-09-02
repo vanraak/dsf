@@ -3,11 +3,11 @@
 
 **Package ‘dsf’**
 
-September 1, 2025
+September 2, 2025
 
 **Title** \`\`Data Science Foudations’’
 
-**Version** 0.0.10
+**Version** 0.0.11
 
 **Description**
 

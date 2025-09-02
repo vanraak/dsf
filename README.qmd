@@ -1,15 +1,15 @@
 ---
 title: "Package `dsf`"
-date: "2025-09-01"
+date: "2025-09-02"
 format: 
   pdf: 
     toc: false
     include-in-header: tight-title.tex
 ---
 
-**Version** 0.0.10
+**Version** 0.0.11
 
-**Description** The **dsf** package provides a collection of datasets used in the book `Data Science Foundations and Machine Learning with Python`. It is designed to make data science techniques accessible to individuals with minimal coding experience.
+**Description** The **dsf** package provides a collection of datasets used in the book `Data Science Foundations and Machine Learning with Python`.
 
 **URL** <https://github.com/vanraak/dsf>
 
@@ -316,26 +316,26 @@ The churn dataset contains 5000 rows (customers) and 20 columns (variables/featu
 
 The 20 variables are:
 
-- state: Categorical, for the 51 states and the District of Columbia.
-- area_code: Categorical.
-- account_length: count, how long account has been active.
-- voice_plan: Boolean (True/False), indicator of whether the customer has a voice mail plan.
-- voice_messages: Count, number of voice mail messages.
-- intl_plan: Boolean (True/False), indicator of whether the customer has an international plan.
-- intl_mins: Continuous, minutes customer used service to make international calls.
-- intl_calls: Count, total number of international calls.
-- intl_charge: Continuous, total international charge.
-- day_mins: Continuous, minutes customer used service during the day.
-- day_calls: Count, total number of calls during the day.
-- day_charge: Continuous, total charge during the day.
-- eve_mins: Continuous, minutes customer used service during the evening.
-- eve_calls: Count, total number of calls during the evening.
-- eve_charge: Continuous, total charge during the evening.
-- night_mins: Continuous, minutes customer used service during the night.
-- night_calls: Count, total number of calls during the night.
-- night_charge: Continuous, total charge during the night.
-- customer_calls: Count, number of calls to customer service.
-- churn: Boolean (True/False), indicator of whether the customer has left the company.
+- state: indicator for the 51 states and the District of Columbia.
+- area_code: customer's area code.
+- account_length: how long the account has been active.
+- voice_plan: indicator of whether the customer has a voice mail plan (1/0).
+- voice_messages: number of voice mail messages.
+- intl_plan: indicator of whether the customer has an international plan (1/0).
+- intl_mins: minutes customer used service to make international calls.
+- intl_calls: total number of international calls.
+- intl_charge: total international charge.
+- day_mins: minutes customer used service during the day.
+- day_calls: total number of calls during the day.
+- day_charge: total charge during the day.
+- eve_mins: minutes customer used service during the evening.
+- eve_calls: total number of calls during the evening.
+- eve_charge: total charge during the evening.
+- night_mins: minutes customer used service during the night.
+- night_calls: total number of calls during the night.
+- night_charge: total charge during the night.
+- customer_calls: number of calls to customer service.
+- churn: indicator of whether the customer has left the company (1/0).
 
 **Source**
 This UCI dataset is publicly available from OpenML: <https://openml.org/d/40701>
