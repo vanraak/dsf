@@ -3,15 +3,15 @@
 
 **Package ‘dsf’**
 
-September 2, 2025
+September 8, 2025
 
 **Title** \`\`Data Science Foudations’’
 
-**Version** 0.0.11
+**Version** 0.0.12
 
 **Description**
 
-The **dsf** package provides a collection of datasets used in the book `Data Science Foundations and Machine Learning with Python`. It is designed to make data science techniques accessible to individuals with minimal coding experience.
+The **dsf** package provides a collection of datasets used in the book `Data Science Foundations and Machine Learning with Python`.
 
 **URL** <https://github.com/vanraak/dsf>
 
@@ -56,7 +56,6 @@ The following datasets are included:
 - churntel
 - corona
 - diamonds
-- fertilizer
 - house
 - houseprice
 - insurance
