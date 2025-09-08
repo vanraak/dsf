@@ -446,7 +446,7 @@ The 21 variables are:
 
 **Source**
 
-This dataset is publicly available from IBM Cloud Pak for Data <https://www.ibm.com/analytics/cloud-pak-for-data> and Kaggle <https://www.kaggle.com/blastchar/telco-customer-churn>.
+This dataset is publicly available from Kaggle: <https://www.kaggle.com/blastchar/telco-customer-churn>.
 
 **References**
 
