@@ -7,7 +7,7 @@ September 8, 2025
 
 **Title** \`\`Data Science Foudations’’
 
-**Version** 0.0.12
+**Version** 0.0.13
 
 **Description**
 
