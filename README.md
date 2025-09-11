@@ -3,11 +3,11 @@
 
 **Package ‘dsf’**
 
-September 8, 2025
+September 11, 2025
 
 **Title** \`\`Data Science Foudations’’
 
-**Version** 0.0.13
+**Version** 0.0.14
 
 **Description**
 
@@ -56,6 +56,7 @@ The following datasets are included:
 - churntel
 - corona
 - diamonds
+- drug
 - house
 - houseprice
 - insurance

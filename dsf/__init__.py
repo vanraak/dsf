@@ -12,6 +12,7 @@ datasets = {
     "churntel": "Telecom churn dataset (alternative).",
     "corona": "COVID-19 related dataset.",
     "diamonds": "Diamonds dataset.",
+    "drug": "Drug classification dataset.",
     "house": "House sales dataset.",
     "houseprice": "House price dataset.",
     "insurance": "Insurance dataset.",
