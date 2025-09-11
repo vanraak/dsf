@@ -1,6 +1,8 @@
 import pandas as pd
 import importlib.resources
 
+from ._version import __version__
+
 datasets = {
     "adult": "Adult census income dataset.",
     "advertising": "The dataset from an organization’s social media ad campaign.",

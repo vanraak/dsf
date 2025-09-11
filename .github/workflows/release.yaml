@@ -21,10 +21,18 @@ jobs:
         with:
           python-version: 3.11
 
-      - name: Build package
+      - name: Install build tools
         run: |
-          pip install build
-          python -m build
+          pip install build setuptools_scm wheel
+
+      - name: Update README with version
+        run: |
+          VERSION=$(python -c "from setuptools_scm import get_version; print(get_version())")
+          sed -i "s/{{VERSION}}/$VERSION/g" README_TEMPLATE.md
+          mv README_TEMPLATE.md README.md
+
+      - name: Build package
+        run: python -m build
 
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
