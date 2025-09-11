@@ -1,13 +1,13 @@
 ---
 title: "Package `dsf`"
-date: "2025-09-08"
+date: "2025-09-11"
 format: 
   pdf: 
     toc: false
     include-in-header: tight-title.tex
 ---
 
-**Version** 0.0.13
+**Version** 0.0.14
 
 **Description** The **dsf** package provides a collection of datasets used in the book `Data Science Foundations and Machine Learning with Python`.
 
@@ -524,6 +524,40 @@ This dataset is publicly available in the ggplot2 R package: <https://ggplot2.ti
 For more information related to the dataset see:
 
 <https://search.r-project.org/CRAN/refmans/nodbi/html/diamonds.html>
+
+
+
+\newpage
+
+
+\hrulefill
+\vspace{-1.5em}
+\section[drug]{drug \normalfont Drug Classification dataset}
+\vspace{-1.5em} 
+\hrulefill
+
+**Description**
+
+A synthetically generated dataset of 200 patients that includes their age, sodium-to-potassium (Na/K) ratio, and the prescribed drug type.
+
+**Usage**
+
+df=dsf.load('drug')
+
+**Format**
+
+The drug dataset contains 200 rows and 3 columns (variables/features).
+
+The 3 variables are:
+
+- age: patient age,
+- ratio: sodium-to-potassium (Na/K) ratio,
+- type: prescribed drug type.
+
+**Source**
+
+This dataset is generated for the book 'Data Science Foundations and Machine Learning Using Python'.
+
 
 
 
