@@ -2,6 +2,3 @@
 build/
 dist/
 dsf/__pycache__/
-
-#Old backup files
-backup/
