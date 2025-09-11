@@ -65,4 +65,4 @@ The following datasets are included:
 **Documentation**
 
 The full documentation is available at:
-<https://github.com/vanraak/dsf/blob/main/readme.pdf>
+<https://github.com/vanraak/dsf/blob/main/README.pdf>
