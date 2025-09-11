@@ -31,8 +31,4 @@ exclude = ["csv", "pickle", "sourcedata"]
 [tool.setuptools_scm]
 version_scheme = "post-release"
 local_scheme = "no-local-version"
-
-[tool.setuptools_scm]
 write_to = "dsf/_version.py"
-version_scheme = "post-release"
-local_scheme = "no-local-version"
