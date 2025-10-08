@@ -13,6 +13,7 @@ datasets = {
     "corona": "COVID-19 related dataset.",
     "diamonds": "Diamonds dataset.",
     "drug": "Drug classification dataset.",
+    "gapminder": "Gapminder dataset.",
     "house": "House sales dataset.",
     "houseprice": "House price dataset.",
     "insurance": "Insurance dataset.",
