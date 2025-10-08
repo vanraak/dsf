@@ -1,6 +1,9 @@
 from ._version import __version__
 from .datasets import load, datasets, dataset_table
-from .hybrid_nb import HybridNB
+
+def version():
+    """Return DSF package version."""
+    return __version__
 
 __all__ = ["load", "datasets", "dataset_table"]
 
@@ -14,4 +17,7 @@ Available datasets:
 
 >>> import dsf
 >>> df = dsf.load('<dataset_name>')  # Load a dataset as a pandas DataFrame
+
+# Show the version of the DSF library:
 >>> dsf.version()  # DSF version {__version__}
+"""
