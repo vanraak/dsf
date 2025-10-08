@@ -2,8 +2,8 @@ from ._version import __version__
 from .datasets import load, datasets, dataset_table
 
 def version():
-    """Return DSF package version."""
-    return __version__
+    """Prints DSF package version."""
+    print(f"Version: {__version__}")
 
 __all__ = ["load", "datasets", "dataset_table"]
 

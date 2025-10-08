@@ -53,6 +53,7 @@ The following datasets are included:
 - corona
 - diamonds
 - drug
+- gapminder
 - house
 - houseprice
 - insurance
