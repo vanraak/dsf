@@ -1,0 +1,4 @@
+include README.md
+include LICENSE
+include dsf/*.py
+recursive-include dsf/data *
